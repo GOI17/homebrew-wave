@@ -9,12 +9,12 @@ class Wave < Formula
   depends_on :macos
 
   def install
-    ldflags = "-s -w -X wave/ui/cli.Version=#{version}"
+    ldflags = "-X wave/ui/cli.Version=#{version}"
     system "go", "build", *std_go_args(ldflags:), "./cmd/wave"
   end
 
   test do
     assert_match "Wave v#{version}", shell_output("#{bin}/wave version")
-    assert_match "Capture device state", shell_output("#{bin}/wave capture --help")
+    assert_match "Analyze and export current device configuration", shell_output("#{bin}/wave capture --help")
   end
 end
