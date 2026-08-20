@@ -1,8 +1,8 @@
 class Wave < Formula
   desc "Capture, preview, apply, and roll back macOS migration plans"
   homepage "https://github.com/GOI17/wave"
-  url "https://github.com/GOI17/wave/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "4d293aad0e2d97c6c8f47940567346de18182cfeead1d4290e5c4e852b338ecc"
+  url "https://github.com/GOI17/wave/archive/refs/tags/v1.2.2.tar.gz"
+  sha256 "5b0794b44691fe74a3cfa96bf3179b3c0cf484182741650f2996d5bbed59a411"
   license "MIT"
 
   depends_on "go" => :build
